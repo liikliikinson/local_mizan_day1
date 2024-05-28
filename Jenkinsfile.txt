@@ -1,37 +1,21 @@
 pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            steps {
-                dir('C:/Jenkins/hehe/test.bat') {
-                    /* execute commands in the scripts directory */
-                }
-            bat 'C:/Jenkins/hehe/test.bat'
-            }
-        }
-        stage('Test') {
-            steps {
-                dir('C:/Jenkins/hehe/test.bat') {
-                    /* execute commands in the scripts directory */
-                }
-                bat 'C:/Jenkins/hehe/test.bat'
-            }
-        }
-      stage('Package') {
-            steps {
-                dir('C:/Jenkins/hehe/test.bat') {
-                    /* execute commands in the scripts directory */
-                }
-                bat 'C:/Jenkins/hehe/test.bat'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                dir('C:/Jenkins/hehe/test.bat') {
-                    /* execute commands in the scripts directory */
-                }
-                bat 'C:/Jenkins/hehe/test.bat'
-            }
-        }
-    }
+   agent any
+
+   stages {
+      stage('Build') {
+         steps {
+			echo '1'
+         }
+      }
+      stage('Test') {
+         steps {
+			echo '2'
+         }
+      }
+      stage('Publish') {
+          steps {
+			echo '3'
+          }
+      }      
+   }
 }
