@@ -3,34 +3,34 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-            bat 'C:/Users/DBBAKHAZM/Jenkins'
+            bat 'C:/Jenkins/test.bat'
             }
         }
         stage('Test') {
             steps {
-                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/DBBAKHAZM/Jenkins'
+                bat 'C:/Jenkins/test.bat'
             }
         }
       stage('Package') {
             steps {
-                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/DBBAKHAZM/Jenkins'
+                bat 'C:/Jenkins/test.bat'
             }
         }
         stage('Deploy') {
             steps {
-                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/DBBAKHAZM/Jenkins'
+                bat 'C:/Jenkins/test.bat'
             }
         }
     }
