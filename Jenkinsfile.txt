@@ -1,21 +1,37 @@
 pipeline {
-   agent any
-
-   stages {
-      stage('Build') {
-         steps {
-			echo '1'
-         }
-      }
-      stage('Test') {
-         steps {
-			echo '2'
-         }
-      }
-      stage('Publish') {
-          steps {
-			echo '3'
-          }
-      }      
-   }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                    /* execute commands in the scripts directory */
+                }
+            bat 'C:/Users/DBBAKHAZM/Jenkins'
+            }
+        }
+        stage('Test') {
+            steps {
+                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/DBBAKHAZM/Jenkins'
+            }
+        }
+      stage('Package') {
+            steps {
+                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/DBBAKHAZM/Jenkins'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                dir('C:/Users/DBBAKHAZM/Jenkins') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/DBBAKHAZM/Jenkins'
+            }
+        }
+    }
 }
